@@ -1,6 +1,10 @@
 <h1 class="nombre-pagina">Crear Nueva cita</h1>
 <p class="text-center" class="descripcion-pagina">Elige tus servicios e ingresa tus datos</p class="text-center">
 
+<?php
+    include_once __DIR__ . '/../templates/barra.php';
+?>
+
 <div class="app">
 
     <div id="app">
@@ -21,7 +25,7 @@
         <h2>Tus datos y cita</h2>
         <p class="text-center">Coloca tus datos y fecha de cita</p class="text-center">
         <p class="text-center">Horario de atencion de Lunes a Sabado con horario de 10 Am a 8 Pm</p class="text-center">
-        
+
         <form class="formulario">
             <div class="campo">
                 <label for="nombre">Tu Nombre</label>
@@ -29,8 +33,7 @@
             </div>
             <div class="campo">
                 <label for="nombre">Fecha</label>
-                <input type="date" id="fecha"
-                min="<?php echo date('Y-M-d');?>" >
+                <input type="date" id="fecha" min="<?php echo date('Y-M-d');?>">
             </div>
 
             <div class="campo">
@@ -49,7 +52,7 @@
     </div>
 
     <div class="paginacion">
-      <button class="boton" id="anterior">
+        <button class="boton" id="anterior">
             <-Anteior </button>
                 <button class="boton" id="siguiente"> Siguente-></button>
     </div>

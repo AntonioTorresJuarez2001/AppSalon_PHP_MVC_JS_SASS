@@ -31,8 +31,8 @@ class LoginController
             $_SESSION['email'] = $usuario->email;
             $_SESSION['login'] = true;
             //rediccionamiento o roles de cliente o adminjajaj
-            if ($usuario->administrador === "1") {
-              $_SESSION['administrador'] = $usuario->administrador ?? null;
+            if ($usuario->admin === "1") {
+              $_SESSION['admin'] = $usuario->admin ?? null;
               header('Location: /admin');
             } else {
               header('Location: /cita');
